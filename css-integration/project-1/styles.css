@@ -1,0 +1,175 @@
+/* Reset default styles */
+* {
+  /* margin: 0;
+  padding: 0; */
+  box-sizing: border-box;
+}
+
+/* Global styles */
+body {
+  font-family: Arial, sans-serif;
+}
+/* Navigation bar styles */
+.navbar {
+    background-color: rgb(16, 32, 98, 0.5);
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+  }
+  
+  .navbar ul {
+    display: flex;
+    list-style-type: none;
+  }
+  
+  .navbar ul li {
+    margin-right: 20px;
+  }
+  
+  .navbar ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .navbar ul li a:hover {
+    color: #ffcc00;
+  }
+  
+
+   /* Header styles */
+header {
+    background-image: url("https://media.licdn.com/dms/image/D5616AQHZai_MLbXuNQ/profile-displaybackgroundimage-shrink_350_1400/0/1681886252242?e=1691625600&v=beta&t=3FrvflImXeEXKnQ1u5uM40_bjvSKoAfhfM-rOG7jifk");
+    background-size: cover;
+    height: 400px;    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .header-overlay {
+    background-color: rgba(0, 0, 0, 0.6);
+    text-align: center;
+    border-radius: 30px;
+    box-shadow: 4px 4px 8px #000;
+    border-style: double;
+    padding: 20px;
+    color: #fff;
+  }
+  
+  .header-overlay h1 {
+    font-size: 36px;
+  }
+  
+  .header-overlay p {
+    font-size: 18px;
+  }
+  /* Project grid styles */
+.projects {
+    padding: 40px;
+  }
+  
+  .project-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+  
+  .project-item {
+    text-align: center;
+  }
+  
+  .project-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+  }
+  
+  .project-item h3 {
+    margin-top: 10px;
+    font-size: 24px;
+  }
+  
+  .project-item p {
+    margin-top: 5px;
+  }
+/* CSS animation styles */
+.project-item:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+  }
+    /* Home section styles */
+.home-section {
+    background-color: #f2f2f2;
+    text-align: center;
+    padding: 100px 0;
+  }
+  
+  .home-content h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  .home-content p {
+    font-size: 18px;
+  }
+  
+  /* About section styles */
+  .about-section {
+    background-color: #fff;
+    padding: 100px 0;
+  }
+  
+  .about-content h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .about-content p {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  
+  /* Skills section styles */
+  .skills-section {
+    background-color: #f2f2f2;
+    padding: 100px 0;
+  }
+  
+  .skills-content h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .skills-content ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .skills-content li {
+    margin-right: 20px;
+    font-size: 16px;
+  }
+  /* Footer styles */
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .footer p {
+    font-size: 14px;
+  }
+  
+  .footer a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .footer a:hover {
+    text-decoration: underline;
+    color: #ffcc00;
+  }
