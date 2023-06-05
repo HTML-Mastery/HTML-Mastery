@@ -26,8 +26,7 @@ body {
   nav ul li a {
     color: #fff;
     text-decoration: none;
-  }
-  
+  }  
   .menu-icon {
     display: none;
   }
@@ -63,8 +62,6 @@ body {
     align-items: center;
     /* color: #fff; */
   }
-
- 
   
   .hero-content {
     text-align: center;    
@@ -148,8 +145,10 @@ footer {
   color: #fff;
   padding: 10px;
   text-align: center;
+  text-decoration: none;
 }
-  .footer a:hover {
+  
+ .footer a:hover {
     text-decoration: underline;
     color: #ffcc00;
   }
