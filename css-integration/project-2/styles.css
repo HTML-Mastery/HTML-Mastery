@@ -1,0 +1,155 @@
+/* Task 2: Link an external CSS file and define styles for different sections */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+  }
+  
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  nav ul li {
+    margin: 0 10px;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .menu-icon {
+    display: none;
+  }
+  
+  @media screen and (max-width: 768px) {
+    nav ul {
+      display: none;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .menu-icon {
+      display: block;
+      cursor: pointer;
+      font-size: 20px;
+    }
+  
+    #menu-toggle {
+      display: none;
+    }
+  
+    #menu-toggle:checked ~ ul {
+      display: flex;
+    }
+  }
+  
+  .hero {
+    background-image: url(https://media.licdn.com/dms/image/D5616AQHZai_MLbXuNQ/profile-displaybackgroundimage-shrink_350_1400/0/1681886252242?e=1691625600&v=beta&t=3FrvflImXeEXKnQ1u5uM40_bjvSKoAfhfM-rOG7jifk);
+    background-size: cover;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* color: #fff; */
+  }
+
+ 
+  
+  .hero-content {
+    text-align: center;    
+  }
+  .hero-content h1, .hero-content p{
+    color: #fff;
+    text-shadow: 4px 4px 8px #000;
+    padding: 13px;
+    border-radius: 10px;
+    background-color: rgb(252, 45, 30, 0.3);
+  }
+  
+  .cta-button {
+    background-color: #ff0000;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 10px;
+  }
+  
+  .products {
+    padding: 20px;
+  }
+  
+  .product-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .product-card {
+    border: 1px solid #ddd;
+    padding: 20px;
+    text-align: center;
+    width: calc(33.33% - 20px);
+    margin-bottom: 20px;
+  }
+  
+  .product-card img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .product-card:hover {
+    /* Task 6: Add hover effects to product images and incorporate CSS transitions */
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+  }
+ 
+  /* Styles for newly added sections */
+
+#about,
+#contact {
+  padding: 40px 20px;
+}
+
+#about h2,
+#contact h2 {
+  text-align: center;
+}
+
+#about p,
+#contact p {
+  text-align: justify;
+}
+
+#about a {
+  display: block;
+  text-align: center;
+  margin-top: 20px;
+}
+
+#contact p {
+  margin-bottom: 10px;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+  .footer a:hover {
+    text-decoration: underline;
+    color: #ffcc00;
+  }
